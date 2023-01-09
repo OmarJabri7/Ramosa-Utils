@@ -1,0 +1,34 @@
+# products:
+#   css: 'div[data-component-type="_3GR-w"]'
+#   xpath: null
+#   multiple: true
+#   type: Text
+#   # <div class="_3GR-w"><div class="_1tu1Z Vgu6S"><h1 class="_18_85">Hyaluronic Acid Moisturizing Repair Face Cream Deep Nourishing Skin Care Remove Redness Whitening Anti-Aging Beauty Cosmetics </h1></div><div class="mGXnE _37W_B" data-spm-anchor-id="a2g0o.productlist.0.i33.548e53ddpIyoAo"><span style="font-size: 12px;">LBP</span><span style="font-size: 20px;">6</span><span style="font-size: 12px;">,</span><span style="font-size: 20px;">150</span><span style="font-size: 12px;">.</span><span style="font-size: 12px;">6</span></div><div class="_11_8K"></div><div class="ZzMrp"><span class="_1kNf9">1 sold</span></div><div class="KnIS- _4juNd"><div><span class="_2jcMA">Free Shipping</span></div></div><div class="_21aoB"></div><span class="_7CHGi"><a role="store" class="ox0KZ" href="//www.aliexpress.com/store/1102176340" target="_blank">RUIYUYU Store</a></span></div>
+products:
+  css: 'div[data-component-type="s-search-result"]'
+  xpath: null
+  multiple: true
+  type: Text
+  children:
+    title:
+      css: "h2 a.a-link-normal.a-text-normal"
+      xpath: null
+      type: Text
+    url:
+      css: "h2 a.a-link-normal.a-text-normal"
+      xpath: null
+      type: Link
+    rating:
+      css: "div.a-row.a-size-small span:nth-of-type(1)"
+      xpath: null
+      type: Attribute
+      attribute: aria-label
+    reviews:
+      css: "div.a-row.a-size-small span:nth-of-type(2)"
+      xpath: null
+      type: Attribute
+      attribute: aria-label
+    price:
+      css: "span.a-price:nth-of-type(1) span.a-offscreen"
+      xpath: null
+      type: Text

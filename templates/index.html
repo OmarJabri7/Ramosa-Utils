@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
 <h3>
   Ramosa Utils
   </h3>
   <body>
   <form action="{{ url_for('reviews') }}" method = "post">
-    <input type="submit" value="Submit"/>
+    <label for="base">Insert Reviews from RYTR</label>
       <br>
       <textarea type="text" rows="5" cols="80" name = "reviews" value="" id="reviews"></textarea>
       <br>
-    <label for="base">Insert Reviews from RYTR</label>
+    <input type="submit" value="Submit"/>
+    <br>
   </form>
+  <form action="{{ url_for('products') }}" method = "post">
+    <div id="loading"></div>
+    <div id="content">
+    <style>div#loading {
+      width: 35px;
+      height: 35px;
+      display: none;
+      background: url(/static/loadingimage.gif) no-repeat;
+      cursor: wait;
+      }</style>
+    <script type="text/javascript">// <![CDATA[
+      function loading(){
+          $("#loading").show();
+          $("#content").hide();       
+      }
+// ]]></script>
+<br>
+  <label for="base">Insert Hot Products Search</label>
+  <br>
+  <textarea type="text" rows="5" cols="80" name = "products" value="" id="products"></textarea>
+  <br>
+  <input type="submit" value="Submit" onclick="loading();"/>
+</form>
 </body>
 </h3>
 </head>
